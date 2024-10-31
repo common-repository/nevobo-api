@@ -1,0 +1,375 @@
+/*
+Nevobo Plugin Stylesheet
+Styling can be added here
+*/
+
+@import "nevobo-fluid.css";
+@import "nevobo-statistics.css";
+
+/* Notice */
+
+.notice {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-left-width: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+    padding: 5px 12px;
+}
+
+.notice-error {
+    border-left-color: #dc3232;
+}
+
+.notice-warning {
+    border-left-color: #ffb900;
+}
+
+.notice-success {
+    border-left-color: #46b450;
+}
+
+.notice-info {
+    border-left-color: #00a0d2;
+}
+
+
+/* Defaults */
+
+.text-left {
+    text-align: left !important
+}
+
+.text-right {
+    text-align: right !important
+}
+
+.text-center {
+    text-align: center !important
+}
+
+.text-justify {
+    text-align: justify !important
+}
+
+.bold {
+    font-weight: 700;
+}
+
+
+/* table-defaults */
+
+.nevobotable {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 1rem;
+}
+
+.nevobotable th,
+.nevobotable td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #eceeef;
+}
+
+.nevobotable thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #eceeef;
+}
+
+.nevobotable tbody+tbody {
+    border-top: 2px solid #eceeef;
+}
+
+.nevobotable .table {
+    background-color: #fff;
+}
+
+
+/* table-small */
+
+.table-sm th,
+.table-sm td {
+    padding: 0.3rem;
+}
+
+
+/* table-bordered */
+
+.table-bordered {
+    border: 1px solid #eceeef;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #eceeef;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+    border-bottom-width: 2px;
+}
+
+
+/* table-striped */
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+/* table-hover */
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-active,
+.table-active>th,
+.table-active>td {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-hover .table-active:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-hover .table-active:hover>td,
+.table-hover .table-active:hover>th {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+
+/* table-context */
+
+.table-success,
+.table-success>th,
+.table-success>td {
+    background-color: #dff0d8;
+}
+
+.table-hover .table-success:hover {
+    background-color: #d0e9c6;
+}
+
+.table-hover .table-success:hover>td,
+.table-hover .table-success:hover>th {
+    background-color: #d0e9c6;
+}
+
+.table-info,
+.table-info>th,
+.table-info>td {
+    background-color: #d9edf7;
+}
+
+.table-hover .table-info:hover {
+    background-color: #c4e3f3;
+}
+
+.table-hover .table-info:hover>td,
+.table-hover .table-info:hover>th {
+    background-color: #c4e3f3;
+}
+
+.table-warning,
+.table-warning>th,
+.table-warning>td {
+    background-color: #fcf8e3;
+}
+
+.table-hover .table-warning:hover {
+    background-color: #faf2cc;
+}
+
+.table-hover .table-warning:hover>td,
+.table-hover .table-warning:hover>th {
+    background-color: #faf2cc;
+}
+
+.table-danger,
+.table-danger>th,
+.table-danger>td {
+    background-color: #f2dede;
+}
+
+.table-hover .table-danger:hover {
+    background-color: #ebcccc;
+}
+
+.table-hover .table-danger:hover>td,
+.table-hover .table-danger:hover>th {
+    background-color: #ebcccc;
+}
+
+.thead-default th {
+    color: #464a4c;
+    background-color: #eceeef;
+}
+
+
+/* table-inverse */
+
+.table-inverse {
+    color: #fff;
+    background-color: #292b2c;
+}
+
+.thead-inverse th {
+    color: #fff;
+    background-color: #292b2c;
+}
+
+.table-inverse th,
+.table-inverse td,
+.table-inverse thead th {
+    border-color: #fff;
+}
+
+.table-inverse.table-bordered {
+    border: 0;
+}
+
+
+/* table-dark-style */
+
+.table-dark {
+    color: #fff;
+    background-color: #212529;
+    border-color: #454d55 !important;
+}
+
+.table-dark thead,
+.table-dark th,
+.table-dark table,
+.table-dark td,
+.table-dark tr {
+    border-color: #454d55 !important;
+}
+
+
+/* table-diy-style */
+
+.table-diy {
+    color: #fff;
+    background-color: #212529;
+    border-color: #454d55 !important;
+}
+
+.table-diy thead,
+.table-diy th,
+.table-diy table,
+.table-diy td,
+.table-diy tr {
+    border-color: #454d55 !important;
+}
+
+
+/* table-responsive */
+
+.nevobofeed,
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.nevobofeed.table-bordered,
+.table-responsive.table-bordered {
+    border: 0;
+}
+
+
+/* Alerts */
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+
+/* Div Style */
+
+.match-row {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    /* establish flex container */
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    /* switched from default (flex-start, see below) */
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: center;
+    align-items: center;
+    /*  flex-direction: row;
+    /* default value; can be omitted */
+    /*    flex-wrap: nowrap;
+    /* default value; can be omitted */
+}
+
+.match-row>div {
+    /*  display: flex;
+    align-items: center;*/
+    padding: 1rem;
+}
+
+.match-center {
+    display: flex;
+    /* establish flex container */
+    flex-direction: row;
+    /* default value; can be omitted */
+    flex-wrap: nowrap;
+    /* default value; can be omitted */
+    justify-content: space-between;
+    /* switched from default (flex-start, see below) */
+    align-items: center;
+    /* align center */
+}
+
+.match-label {
+    display: flex;
+    /* establish flex container */
+    align-items: center;
+    /* align center */
+    text-align: center;
+    width: 5rem;
+    height: 1.875rem;
+    border-radius: 0.5rem;
+    background: #303030;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.background-orange {
+    background-color: #ff6400;
+}

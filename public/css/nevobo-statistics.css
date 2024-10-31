@@ -1,0 +1,461 @@
+/* Score Table */
+
+.score-table {
+    overflow: hidden;
+    color: #646464;
+    font-size: 1.125rem;
+    line-height: 1.375rem
+}
+
+.score-table .score-row {
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: 1.5rem;
+    min-height: 4.375rem
+}
+
+.score-table .score-row a {
+    word-wrap: break-word
+}
+
+.score-table .score-row.strong {
+    color: #000000;
+    font-weight: 700
+}
+
+.score-table .score-row.title-row {
+    min-height: 0;
+    padding: .5rem 0;
+    font-size: .75rem;
+    line-height: 1rem
+}
+
+.score-table .title {
+    float: left;
+    width: 28%
+}
+
+.score-table .title .position {
+    float: left;
+    margin-right: 1.25rem
+}
+
+.score-table .property {
+    float: right;
+    width: 12%;
+    position: relative;
+    padding: 0 .5rem
+}
+
+.score-table .property span {
+    position: relative;
+    z-index: 2
+}
+
+.score-table .property:before {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -125rem;
+    bottom: -125rem;
+    content: ""
+}
+
+.score-table .property:hover:before {
+    background: rgba(0, 0, 0, 0.05)
+}
+
+@media only screen and (max-width: 35em) {
+    .score-table {
+        font-size: 1rem;
+        line-height: 1.25rem
+    }
+    .score-table .score-row {
+        padding-top: .75rem;
+        min-height: 2.875rem
+    }
+    .score-table .property {
+        float: right;
+        width: 12%;
+        position: relative;
+        padding: 0 .25rem
+    }
+    .score-table .title {
+        width: 70%
+    }
+    .score-table .title .position {
+        margin-right: .75rem
+    }
+    .score-table .property {
+        width: 15%
+    }
+}
+
+
+/* Match */
+
+.title-red,
+.match-detail-container .title {
+    color: #FF4100;
+    color: #000000;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    display: block;
+    margin-bottom: 1.75rem
+}
+
+.match-detail-container {
+    text-align: center
+}
+
+.match-detail-container .match-detail {
+    position: relative;
+    margin-bottom: 1.25rem
+}
+
+.match-detail-container .match-detail .match-label {
+    display: inline-block;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 5rem;
+    height: 1.875rem;
+    line-height: 1.875rem;
+    border-radius: .5rem;
+    background: #303030;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700
+}
+
+.match-detail-container .match-detail .match-label.background-orange {
+    background-color: #ff6400
+}
+
+.match-detail-container .match-detail .match-label .sub-label {
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -.8125rem;
+    height: 1rem;
+    line-height: 1rem;
+    border-radius: .3125rem;
+    background: #006fb8;
+    padding: 0 .5rem;
+    font-weight: 400;
+    font-size: .625rem
+}
+
+.match-detail-container .match-detail .match-detail-name {
+    width: 50%;
+    float: left;
+    font-size: 1.125rem;
+    color: #646464;
+    position: relative;
+    height: 2rem
+}
+
+.match-detail-container .match-detail .match-detail-name.match-center {
+    float: none;
+    width: 100%;
+    text-align: center
+}
+
+.match-detail-container .match-detail .match-detail-name a,
+.match-detail-container .match-detail .match-detail-name span {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline-block;
+    word-wrap: break-word;
+    max-width: 22.5rem
+}
+
+.match-detail-container .match-detail .match-detail-name.match-left {
+    text-align: right;
+    padding-right: 3.25rem
+}
+
+.match-detail-container .match-detail .match-detail-name.match-right {
+    text-align: left;
+    padding-left: 3.25rem
+}
+
+.match-detail-container .match-detail .match-detail-name.bold {
+    font-weight: 700;
+    color: #000000
+}
+
+.match-detail-container .match-detail.large .match-label {
+    width: 7.5rem;
+    font-size: 1rem
+}
+
+.match-detail-container .match-detail.large .match-detail-name.match-left {
+    padding-right: 4.5rem
+}
+
+.match-detail-container .match-detail.large .match-detail-name.match-right {
+    padding-left: 4.5rem
+}
+
+header .match-detail-container .match-detail-content .title {
+    color: #ffffff
+}
+
+header .match-detail-container .match-detail-content .match-detail .match-detail-name {
+    color: #949494;
+    font-weight: 700;
+    position: relative;
+    height: 4rem
+}
+
+@media only screen and (max-width: 35em),
+only screen and (min-width: 35.063em) and (max-width: 61.938em) {
+    header .match-detail-container .match-detail-content .match-detail .match-detail-name {
+        height: 2rem
+    }
+}
+
+header .match-detail-container .match-detail-content .match-detail .match-detail-name.bold {
+    color: #ffffff
+}
+
+header .match-detail-container .match-detail-content .match-detail .match-detail-name.bold a {
+    color: #ffffff
+}
+
+header .match-detail-container .match-detail-content .match-detail .match-detail-name a {
+    color: #949494;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline-block
+}
+
+header .match-detail-container .match-detail-content .match-detail .match-detail-name a.bold {
+    color: #ffffff
+}
+
+header .match-detail-container .match-detail-content .match-detail .match-detail-name a:hover {
+    text-decoration: underline
+}
+
+header .match-detail-container .match-detail-content .match-detail-bottom {
+    color: #ffffff
+}
+
+header .match-detail-container .match-detail-content .match-detail-bottom>a,
+header .match-detail-container .match-detail-content .match-detail-bottom>span {
+    display: inline-block;
+    margin: 0 .5rem
+}
+
+header .match-detail-container .match-detail-content .match-detail-bottom a {
+    color: #ffffff
+}
+
+header .match-detail-container .match-detail-content .match-detail-bottom a:hover {
+    text-decoration: underline;
+    color: #ffffff
+}
+
+header .match-detail-container .match-detail-content .match-label {
+    background: rgba(0, 0, 0, 0.3);
+    font-weight: 700
+}
+
+@media only screen and (min-width: 62em) {
+    header .match-detail-container .match-detail-content .title {
+        font-size: 1.75rem;
+        margin-bottom: 3.75rem
+    }
+    header .match-detail-container .match-detail-content .match-detail {
+        margin-bottom: 2.5rem
+    }
+    header .match-detail-container .match-detail-content .match-detail .match-detail-name {
+        font-size: 2.5rem;
+        line-height: 3rem
+    }
+    header .match-detail-container .match-detail-content .match-detail .match-detail-name.match-left {
+        padding-right: 6.875rem
+    }
+    header .match-detail-container .match-detail-content .match-detail .match-detail-name.match-right {
+        padding-left: 6.875rem
+    }
+    header .match-detail-container .match-detail-content .match-detail .match-label {
+        width: 8.75rem;
+        height: 4rem;
+        line-height: 4rem;
+        border-radius: 1rem;
+        font-size: 2rem
+    }
+    header .match-detail-container .match-detail-content .match-detail .match-label .sub-label {
+        top: -.8125rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        border-radius: .3125rem;
+        padding: 0 .75rem;
+        font-size: .75rem
+    }
+    header .match-detail-container .match-detail-content .match-detail.large .match-label {
+        width: 10.625rem;
+        font-size: 1.5rem
+    }
+    header .match-detail-container .match-detail-content .match-detail.large .match-detail-name.match-left {
+        padding-right: 6.25rem
+    }
+    header .match-detail-container .match-detail-content .match-detail.large .match-detail-name.match-right {
+        padding-left: 6.25rem
+    }
+    header .match-detail-container .match-detail-content .match-detail-bottom>a,
+    header .match-detail-container .match-detail-content .match-detail-bottom>span {
+        margin: 0 .5rem
+    }
+}
+
+.matchrow {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.matchrow.matchrow-title {
+    border-bottom: 2px solid #e5e5e5
+}
+
+.matchrow.matchrow-title h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0
+}
+
+.matchrow .match-detail-container .title {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-bottom: 0
+}
+
+@media only screen and (min-width: 35.063em) {
+    .matchrow .match-detail-container .title {
+        margin-top: .75rem
+    }
+}
+
+@media only screen and (min-width: 35.063em) {
+    .matchrow .match-detail-container .match-detail-content.button-activated .title {
+        margin-top: 0
+    }
+}
+
+.matchrow .match-detail-container .match-detail-content.button-activated .button {
+    margin: 0;
+    margin-top: .125rem;
+    padding: .125rem .75rem;
+    border-radius: .25rem;
+    background-image: url("/build/svg/gradient-topbar.svg");
+    background-position: center
+}
+
+.matchrow .match-detail-container .match-detail {
+    margin-bottom: 0
+}
+
+.matchrow .match-detail-container .match-detail .match-detail-name a,
+.matchrow .match-detail-container .match-detail .match-detail-name span {
+    top: auto;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+}
+
+@media only screen and (min-width: 35.063em) {
+    .matchrow .match-detail-container .match-detail-name {
+        display: table;
+        table-layout: fixed
+    }
+    .matchrow .match-detail-container .match-detail-name span {
+        height: 2.75rem;
+        display: table-cell;
+        vertical-align: middle;
+        word-wrap: break-word
+    }
+}
+
+@media only screen and (min-width: 35.063em) {
+    .matchrow .match-detail-container .match-detail-bottom {
+        margin-top: .75rem
+    }
+}
+
+.matchrow .match-statistics {
+    text-align: center;
+    margin-top: .75rem
+}
+
+@media only screen and (max-width: 35em),
+only screen and (min-width: 35.063em) and (max-width: 61.938em) {
+    .matchrow .match-detail-container .title {
+        margin-bottom: 1.5rem
+    }
+    .matchrow .match-detail-container .match-detail-content.button-activated .title {
+        margin-bottom: .25rem
+    }
+    .matchrow .match-detail-container .match-detail-content.button-activated .button {
+        margin-bottom: 1.5rem
+    }
+    .matchrow .match-detail-container .match-detail {
+        margin-bottom: 1rem
+    }
+}
+
+.row-small span.row-small-text,
+.row-small a.row-small-text:not(.button) {
+    line-height: 3rem;
+    margin-right: 1rem;
+    display: inline-block
+}
+
+.row-small .row-small-text {
+    font-size: .875rem
+}
+
+.row-small span.row-small-text {
+    color: #989898
+}
+
+.result-row>div {
+    border-left: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.result-row>div:first-child {
+    border-left: none
+}
+
+@media only screen and (min-width: 35.063em) and (max-width: 61.938em) {
+    .result-row>div {
+        border-left: none
+    }
+    .result-row>div:first-child {
+        border-left: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.1)
+    }
+    .result-row>div.medium-12 {
+        border-top: 1px solid rgba(0, 0, 0, 0.1)
+    }
+}
+
+@media only screen and (max-width: 35em) {
+    .result-row>div {
+        border-right: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.1)
+    }
+    .result-row>div:first-child {
+        border-top: none
+    }
+}
